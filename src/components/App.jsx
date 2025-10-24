@@ -28,7 +28,7 @@ const App = () => {
             cursorClassName="ml-2"
             className="text-accent text-4xl font-semibold md:text-6xl"
           />
-          <div className="text-primary text-lg mt-10 md:text-xl">
+          <div className="text-primary sm:text-lg mt-10 md:text-xl">
             <p>
               I’m passionate about building complete web applications from front
               to back.
@@ -42,7 +42,7 @@ const App = () => {
               Check out my{" "}
               <a
                 href="#projects"
-                className="text-accent font-bold hover:opacity-70"
+                className="text-accent font-bold hover:opacity-70 focus:opacity-70"
               >
                 projects
               </a>{" "}
@@ -58,7 +58,7 @@ const App = () => {
                 xmlns="http://www.w3.org/2000/svg"
                 className="size-5"
               >
-                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                 <g
                   id="SVGRepo_tracerCarrier"
                   strokeLinecap="round"
@@ -81,7 +81,7 @@ const App = () => {
                 xmlns="http://www.w3.org/2000/svg"
                 className="size-4"
               >
-                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                 <g
                   id="SVGRepo_tracerCarrier"
                   strokeLinecap="round"
@@ -108,7 +108,7 @@ const App = () => {
                 xmlns="http://www.w3.org/2000/svg"
                 className="size-5"
               >
-                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                 <g
                   id="SVGRepo_tracerCarrier"
                   strokeLinecap="round"
@@ -125,38 +125,40 @@ const App = () => {
                 </g>
               </svg>
             </div>
-            <div className="pb-5">
-              <p className="text-white px-5 text-lg">&gt; Nathan.languages</p>
-              <p className="text-secondary px-5 text-lg">
+            <div className="pb-3 md:pb-5">
+              <p className="text-white px-5 md:text-lg">
+                &gt; Nathan.languages
+              </p>
+              <p className="text-secondary px-5 md:text-lg">
                 &#91;"Javascript", "Typescript", "English", "Vietnamese"&#93;
               </p>
             </div>
-            <div className="pb-5">
-              <p className="text-white px-5 text-lg">&gt; Nathan.contact</p>
-              <p className="text-secondary px-5 text-lg">
+            <div className="pb-3 md:pb-5">
+              <p className="text-white px-5 md:text-lg">&gt; Nathan.contact</p>
+              <p className="text-secondary px-5 md:text-lg">
                 &#91;"nathan.pham1505@gmail.com",{" "}
                 <a
                   target="_blank"
                   href="https://github.com/NgocPMT"
-                  className="text-green-600 hover:opacity-80"
+                  className="text-green-600 hover:opacity-80 focus:opacity-80"
                 >
                   "Github"
                 </a>
                 &#93;
               </p>
             </div>
-            <div className="pb-5">
-              <p className="text-white px-5 text-lg">&gt; Nathan.location</p>
-              <p className="text-secondary px-5 text-lg">
+            <div className="pb-3 md:pb-5">
+              <p className="text-white px-5 md:text-lg">&gt; Nathan.location</p>
+              <p className="text-secondary px-5 md:text-lg">
                 &#91;"Can Tho, Viet Nam"&#93;
               </p>
             </div>
-            <div className="pb-5">
-              <p className="text-white px-5 text-lg">&gt; Nathan.resume</p>
-              <p className="text-secondary px-5 text-lg ">
+            <div className="pb-3 md:pb-5">
+              <p className="text-white px-5 md:text-lg">&gt; Nathan.resume</p>
+              <p className="text-secondary px-5 md:text-lg ">
                 &#91;
                 <a
-                  className="text-green-600 hover:opacity-80"
+                  className="text-green-600 hover:opacity-80 focus:opacity-80"
                   href="/resume.pdf"
                   target="_blank"
                 >
@@ -165,14 +167,16 @@ const App = () => {
                 &#93;
               </p>
             </div>
-            <div className="pb-5">
-              <p className="text-white px-5 text-lg">&gt; Nathan.interests</p>
-              <p className="text-secondary px-5 text-lg">
+            <div className="pb-3 md:pb-5">
+              <p className="text-white px-5 md:text-lg">
+                &gt; Nathan.interests
+              </p>
+              <p className="text-secondary px-5 md:text-lg">
                 &#91;"badminton", "playing guitar"&#93;
               </p>
             </div>
 
-            <div className="pb-5">
+            <div className="pb-3 md:pb-5">
               <TextType
                 text={">"}
                 typingSpeed={75}
@@ -180,7 +184,7 @@ const App = () => {
                 showCursor={true}
                 cursorCharacter="|"
                 textColors={["white"]}
-                className="text-white px-5 text-lg"
+                className="text-white px-5 md:text-lg"
               />
             </div>
           </div>
@@ -216,7 +220,7 @@ const App = () => {
                     xmlns="http://www.w3.org/2000/svg"
                     className="size-7"
                   >
-                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                     <g
                       id="SVGRepo_tracerCarrier"
                       strokeLinecap="round"

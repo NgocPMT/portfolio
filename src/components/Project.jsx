@@ -16,31 +16,31 @@ const Project = ({
           className="max-lg:hidden w-full h-full object-center object-cover"
         />
       </div>
-      <div className="p-8">
-        <h5 className="text-2xl md:text-3xl font-semibold mb-8 text-tertiary">
+      <div className="p-6 sm:p-8">
+        <h5 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-8 text-tertiary">
           {title}
         </h5>
-        <p className="mb-8">{description}</p>
-        <div className="flex gap-3 flex-wrap mb-8 text-sm">
+        <p className="mb-8 text-sm sm:text-base">{description}</p>
+        <div className="flex gap-3 flex-wrap mb-8 text-xs sm:text-sm">
           {techStack.map((tech) => (
             <ProjectTech key={`${title}-${tech}`} name={tech} />
           ))}
         </div>
-        <div className="text-[0.9rem] flex items-center gap-4">
+        <div className="text-[0.8rem] sm:text-[0.9rem] flex items-center gap-3 sm:gap-4">
           {livePreviewURL && (
             <a
               href={livePreviewURL}
               target="_blank"
-              className="inline-flex items-center gap-2 shadow-lg ring ring-accent bg-accent text-secondary font-semibold py-2.5 px-5 rounded-md hover:-translate-y-0.5 hover:opacity-70 transition"
+              className="inline-flex items-center gap-2 shadow-lg ring ring-accent bg-accent text-secondary font-semibold py-2 px-4 sm:py-2.5 sm:px-5 rounded-md hover:-translate-y-0.5 hover:opacity-70 focus:-translate-y-0.5 focus:opacity-70 transition text-nowrap"
             >
               Live Preview
               <svg
                 fill="currentColor"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
-                className="text-secondary size-4"
+                className="text-secondary size-3 sm:size-4"
               >
-                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                 <g
                   id="SVGRepo_tracerCarrier"
                   strokeLinecap="round"
@@ -60,15 +60,15 @@ const Project = ({
             <a
               href={sourceURL}
               target="_blank"
-              className="inline-flex items-center gap-2 ring ring-accent shadow-lg text-accent font-semibold py-2.5 px-5 rounded-md hover:-translate-y-0.5 hover:opacity-70 transition"
+              className="inline-flex items-center gap-2 ring ring-accent shadow-lg text-accent font-semibold py-2 px-4 sm:py-2.5 sm:px-5 rounded-md hover:-translate-y-0.5 hover:opacity-70 focus:-translate-y-0.5 focus:opacity-70 transition text-nowrap"
             >
               <svg
                 fill="currentColor"
                 viewBox="0 -0.5 25 25"
                 xmlns="http://www.w3.org/2000/svg"
-                className="text-accent size-4"
+                className="text-accent size-3 sm:size-4"
               >
-                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                 <g
                   id="SVGRepo_tracerCarrier"
                   strokeLinecap="round"
