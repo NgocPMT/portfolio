@@ -5,9 +5,9 @@ import TextType from "./TextType";
 const App = () => {
   return (
     <div className="bg-secondary min-h-svh">
-      <div className="max-w-5xl p-4 lg:mx-auto ">
+      <div className="max-w-5xl p-4 lg:mx-auto">
         <nav className="w-full mt-5">
-          <ul className="flex justify-center gap-20 text-primary">
+          <ul className="flex justify-center gap-20 text-primary md:justify-end md:pr-10">
             <li>
               <a href="#projects" className="text-xl">
                 Projects
@@ -29,9 +29,9 @@ const App = () => {
             cursorCharacter="|"
             textColors={["#0a5c1c"]}
             cursorClassName="ml-2"
-            className="text-accent text-4xl font-semibold"
+            className="text-accent text-4xl font-semibold md:text-6xl"
           />
-          <div className="text-primary text-lg mt-10">
+          <div className="text-primary text-lg mt-10 md:text-xl">
             <p>
               I’m passionate about building complete web applications from front
               to back.
@@ -180,6 +180,7 @@ const App = () => {
                 key={project.id}
                 title={project.title}
                 description={project.description}
+                imgURL={project.imgURL}
                 techStack={project.techStack}
                 livePreviewURL={project.livePreviewURl}
                 sourceURL={project.sourceURL}
