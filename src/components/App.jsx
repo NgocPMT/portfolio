@@ -38,7 +38,7 @@ const App = () => {
               in Backend Development, and grow into a Solution Architect who can
               design and lead complex technical systems.
             </p>
-            <p>
+            <p className="mt-3">
               Check out my{" "}
               <a
                 href="#projects"
@@ -46,7 +46,7 @@ const App = () => {
               >
                 projects
               </a>{" "}
-              below
+              below.
             </p>
           </div>
 
