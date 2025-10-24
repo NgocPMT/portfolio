@@ -1,4 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap");
 @import "tailwindcss";
+
+@theme {
+  --font-mono: "Fira Code", monospace;
+}
 
 @utility text-primary {
   color: hsl(73, 50%, 10%);
@@ -30,4 +35,8 @@
 
 @utility bg-tertiary {
   background-color: hsl(13, 80%, 20%);
+}
+
+body {
+  @apply font-mono;
 }
