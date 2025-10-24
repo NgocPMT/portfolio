@@ -1,3 +1,5 @@
+import projects from "../projects";
+import Project from "./Project";
 import TextType from "./TextType";
 
 const App = () => {
@@ -173,19 +175,16 @@ const App = () => {
               <h3 className="text-2xl text-primary font-semibold">Projects</h3>
               <div className="w-14 h-2 bg-accent mt-5 mb-10"></div>
             </div>
-            <div className="w-full min-h-96 shadow-xl shadow-gray-300 ring ring-[#5c1c0a] rounded-lg bg-white p-8 text-primary">
-              <h5 className="text-2xl font-semibold mb-5 text-tertiary">
-                Blog Platform API (On Working)
-              </h5>
-              <p>
-                Developed a backend API that mimics the core behavior of
-                Medium.com, allowing users to register, publish articles, follow
-                other users, and interact through likes and comments. The
-                project focuses on building a clean, scalable RESTful
-                architecture with secure authentication and efficient database
-                design.
-              </p>
-            </div>
+            {projects.map((project) => (
+              <Project
+                key={project.id}
+                title={project.title}
+                description={project.description}
+                techStack={project.techStack}
+                livePreviewURL={project.livePreviewURl}
+                sourceURL={project.sourceURL}
+              />
+            ))}
           </section>
         </div>
       </div>
