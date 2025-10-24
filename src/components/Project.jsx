@@ -9,7 +9,7 @@ const Project = ({
   sourceURL,
 }) => {
   return (
-    <div className="w-full shadow-xl shadow-gray-300 rounded-lg bg-white text-primary mb-8 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center  overflow-hidden">
+    <div className="w-full shadow-xl rounded-lg bg-white text-primary mb-8 md:mb-16 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center overflow-hidden">
       <div className="max-lg:hidden">
         <img
           src={`/${imgURL}`}
