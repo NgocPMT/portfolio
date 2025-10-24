@@ -153,8 +153,16 @@ const App = () => {
             </div>
             <div className="pb-5">
               <p className="text-white px-5 text-lg">&gt; Nathan.resume</p>
-              <p className="text-secondary px-5 text-lg">
-                &#91;"nathanpham.pdf"&#93;
+              <p className="text-secondary px-5 text-lg ">
+                &#91;
+                <a
+                  className="text-green-600 hover:opacity-80"
+                  href="/resume.pdf"
+                  target="_blank"
+                >
+                  "nathanpham.pdf"
+                </a>
+                &#93;
               </p>
             </div>
             <div className="pb-5">
